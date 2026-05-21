@@ -1,0 +1,39 @@
+/// Spacing, radius, duration, and sizing constants.
+abstract final class AppDimensions {
+  static const double spaceXXS = 2;
+  static const double spaceXS = 4;
+  static const double spaceSM = 8;
+  static const double spaceMD = 12;
+  static const double spaceLG = 16;
+  static const double spaceXL = 20;
+  static const double spaceXXL = 24;
+  static const double space3XL = 40;
+  static const double space4XL = 48;
+  static const double radiusSM = 8;
+  static const double radiusMD = 12;
+  static const double radiusLG = 16;
+  static const double radiusXL = 20;
+  static const double radiusFull = 999;
+  static const double buttonHeight = 52;
+  static const double inputHeight = 56;
+  static const double iconSM = 16;
+  static const double iconMD = 20;
+  static const double iconLG = 24;
+  static const double iconXL = 32;
+  static const double avatarLG = 64;
+  static const double appBarExpandedHeight = 172;
+  static const double appBarCollapsedHeight = 64;
+  static const double bottomNavHeight = 72;
+  static const double cardElevation = 1;
+  static const double pagePadding = 16;
+  static const double homeSummaryCardHeight = 96;
+  static const double transactionTileExtent = 88;
+  static const double customerTileExtent = 84;
+  static const double splashLogoSize = 92;
+  static const double onboardingIllustrationHeight = 260;
+  static const double detailHeroHeight = 260;
+  static const double mobileBreakpoint = 600;
+  static const Duration quickDuration = Duration(milliseconds: 180);
+  static const Duration mediumDuration = Duration(milliseconds: 280);
+  static const Duration longDuration = Duration(milliseconds: 420);
+}

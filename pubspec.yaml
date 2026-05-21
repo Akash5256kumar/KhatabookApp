@@ -1,0 +1,83 @@
+name: apna_business_app
+description: Apna Business App - Business Khata Management
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: 8.1.6
+  equatable: 2.0.5
+
+  # DI
+  get_it: 7.7.0
+  injectable: 2.4.4
+
+  # Functional programming
+  dartz: 0.10.1
+
+  # Networking
+  dio: 5.5.0
+  retrofit: 4.1.0
+
+  # Storage
+  shared_preferences: 2.3.0
+  hive_flutter: 1.1.0
+
+  # Navigation
+  go_router: 14.0.0
+
+  # Images
+  cached_network_image: 3.3.1
+  flutter_svg: 2.0.10
+
+  # UI
+  shimmer: 3.0.0
+
+  # Local notifications — debug OTP display during development
+  flutter_local_notifications: 17.2.3
+
+  # Audio — voice input and AI response playback
+  record: 5.1.2
+  audioplayers: 6.1.0
+  path_provider: 2.1.4
+
+  # Code generation annotations
+  freezed_annotation: 2.4.1
+  json_annotation: 4.9.0
+
+  # PDF generation and sharing
+  pdf: ^3.11.0
+  printing: ^5.13.1
+
+  # Logging
+  talker_flutter: 4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: 2.4.9
+  freezed: 2.5.2
+  json_serializable: 6.8.0
+  injectable_generator: 2.6.2
+  retrofit_generator: 8.1.0
+  flutter_lints: 4.0.0
+  mocktail: 1.0.4
+  bloc_test: 9.1.7
+
+dependency_overrides:
+  # record_linux 0.7.2 is incompatible with record_platform_interface 1.5.0;
+  # override to 1.3.0 which implements the updated interface.
+  record_linux: 1.3.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
